@@ -1,7 +1,7 @@
 pipeline {
 agent any
 environment {
-LABS = credentials('labcreds')
+//LABS = credentials('labcreds')
 }
 stages {
 	stage('Build') {
@@ -26,7 +26,7 @@ stages {
 }
     stage('Deploy') {
 	    steps {
-			echo "deployed compelted"
+			echo "deployed compelted.."
 		    // sh 'sshpass -p $LABS_PSW scp -o StrictHostKeyChecking=no -r .
 	        // $LABS_USR@g01.itversity.com:/home/itv008061/retailproject'
         }
