@@ -6,7 +6,7 @@ LABS = credentials('labcreds')
 stages {
 	stage('Build') {
 		steps {
-			echo "build compelted"
+			echo "build compelted ..."
 		// sh 'pip3 install --user pipenv'
 		// sh '/bitnami/jenkins/home/.local/bin/pipenv --rm || exit 0'
 		// sh '/bitnami/jenkins/home/.local/bin/pipenv install'
@@ -20,7 +20,7 @@ stages {
 }
     stage('Package') {
 	    steps {
-			echo "package compelted"
+			echo "package compelted ..."
 		    // sh 'zip -r retailproject.zip .'
 	}
 }
