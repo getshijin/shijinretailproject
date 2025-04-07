@@ -1,8 +1,8 @@
 pipeline {
 agent any
-environment {
-//LABS = credentials('labcreds')
-}
+// environment {
+// //LABS = credentials('labcreds')
+// }
 stages {
 	stage('Build') {
 		steps {
@@ -14,7 +14,7 @@ stages {
 	}
     stage('Test') {
 	    steps {
-			echo "Test compelted"
+			echo "Test compelted .."
 		// sh '/bitnami/jenkins/home/.local/bin/pipenv run pytest'
 	}
 }
